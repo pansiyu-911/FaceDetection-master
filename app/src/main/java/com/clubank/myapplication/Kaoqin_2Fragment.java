@@ -4,8 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -209,7 +207,7 @@ public class Kaoqin_2Fragment extends Fragment {
             switch (msg.what) {
                 case 1:
                     sim_adapter=new MyAdapter(getActivity(),datalist,
-                            R.layout.activity_main4_1,
+                            R.layout.kaoqin_demo,
                             new String[]{"序号","考勤时间","考勤状态","申请变更"},
                             new int[]{R.id.tv4_1_1,R.id.tv4_1_2, R.id.tv4_1_3,R.id.tv4_1_3});
                     listView.setAdapter(sim_adapter);
@@ -255,7 +253,7 @@ public class Kaoqin_2Fragment extends Fragment {
             if (convertView == null) {
                 viewHolder = new ViewHolder();
 
-                convertView =getLayoutInflater().inflate(R.layout.activity_main4_1,null);
+                convertView =getLayoutInflater().inflate(R.layout.kaoqin_demo,null);
                 viewHolder.textView1 = (TextView) convertView.findViewById(R.id.tv4_1_1);
                 viewHolder.textView2 = (TextView) convertView.findViewById(R.id.tv4_1_2);
                 viewHolder.textView3 = (TextView) convertView.findViewById(R.id.tv4_1_3);

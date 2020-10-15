@@ -5,8 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -25,7 +23,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.clubank.R;
-import com.clubank.facedetection.MainActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -169,7 +166,7 @@ public class KechengFragment extends Fragment {
             switch (msg.what) {
                 case 1:
                     sim_adapter = new MyAdapter(getActivity(),datalist ,
-                            R.layout.activity_main3_1,
+                            R.layout.kecheng_demo,
                             new String[]{"课程图片", "课程名", "老师名"},
                             new int[]{R.id.imageView3_1_0, R.id.textView3_1_0, R.id.textView3_1_1});
                     gridView.setAdapter(sim_adapter);
@@ -211,7 +208,7 @@ public class KechengFragment extends Fragment {
             if (convertView == null) {
                 viewHolder = new ViewHolder();
 
-                convertView =getLayoutInflater().inflate(R.layout.activity_main3_1,null);
+                convertView =getLayoutInflater().inflate(R.layout.kecheng_demo,null);
                 viewHolder.textView1 = (TextView) convertView.findViewById(R.id.textView3_1_0);
                 viewHolder.textView2 = (TextView) convertView.findViewById(R.id.textView3_1_1);
                 viewHolder.imageView=(ImageView) convertView.findViewById(R.id.imageView3_1_0);

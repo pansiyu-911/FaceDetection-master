@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 
 import com.clubank.R;
-public class Main3Activity extends AppCompatActivity {
+public class kecheng_me extends AppCompatActivity {
     private FragmentTransaction transaction;
     private FragmentManager fragmentManager;
 
@@ -47,7 +47,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_kecheng_me);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         setDefaultFragment();
         navView.setOnNavigationItemSelectedListener(m1OnNavigationItemSelectedListener);

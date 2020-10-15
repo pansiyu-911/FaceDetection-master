@@ -81,7 +81,7 @@ public class MeFragment extends Fragment {
         me_btu4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent4 = new Intent(getActivity(), Main1Activity.class);
+                Intent intent4 = new Intent(getActivity(), Login.class);
                 startActivity(intent4);
             }
         });

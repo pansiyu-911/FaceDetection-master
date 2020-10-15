@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.ashokvarma.bottomnavigation.utils.Utils;
 import com.clubank.R;
 
 import java.util.HashMap;
@@ -52,7 +51,7 @@ String pathid;
                     case "1":
                         Looper.prepare();
                         Toast.makeText(Change_Password.this, "修改成功", Toast.LENGTH_SHORT).show();
-                        Intent intent1 = new Intent(Change_Password.this, Main1Activity.class);
+                        Intent intent1 = new Intent(Change_Password.this, Login.class);
                         startActivity(intent1);
                         Looper.loop();
                         break;

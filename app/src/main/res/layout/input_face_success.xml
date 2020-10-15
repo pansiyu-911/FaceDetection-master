@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFF"
     android:orientation="vertical"
-    tools:context=".myapplication.Main2_1Activity">
+    tools:context=".myapplication.InputFaceSuccess">
 
     <include layout="@layout/action_bar"></include>
 

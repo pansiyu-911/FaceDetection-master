@@ -5,24 +5,24 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
-import android.widget.ImageView;
-import com.clubank.R;
-import com.clubank.facedetection.MainActivity;
+import android.widget.Button;
 
-public class Main2Activity extends AppCompatActivity {
-    ImageView imageView;
+import com.clubank.R;
+
+public class InputFaceSuccess extends AppCompatActivity {
+
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_main2);
-        imageView=(ImageView)findViewById(R.id.imageView2);
-        imageView.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.input_face_success);
+        button=findViewById(R.id.button2_1_0);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Main2Activity.this, MainActivity.class);
+                Intent intent =new Intent(InputFaceSuccess.this, kecheng_me.class);
                 startActivity(intent);
             }
         });

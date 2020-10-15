@@ -12,21 +12,19 @@ import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.hardware.Camera;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.clubank.R;
-import com.clubank.myapplication.Main1Activity;
-import com.clubank.myapplication.Main2Activity;
-import com.clubank.myapplication.Main2_1Activity;
+import com.clubank.myapplication.Login;
+import com.clubank.myapplication.InputFace;
+import com.clubank.myapplication.InputFaceSuccess;
 import com.clubank.myapplication.UploadUtil;
 import com.clubank.myapplication.Url;
 import com.clubank.utils.DrawFacesView;
@@ -35,16 +33,10 @@ import com.clubank.view.CameraPreview;
 import com.clubank.view.CircleCameraLayout;
 import com.clubank.view.Util;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -65,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
         rootLayout = findViewById(R.id.surface);
         facesView = findViewById(R.id.face);
         imageView = findViewById(R.id.image);
@@ -222,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
             appDir.mkdir();
         }
 
-        String name=Main1Activity.getEt_username().getText().toString();
+        String name= Login.getEt_username().getText().toString();
 
 
         String fileName = name+ ".png";
@@ -261,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
                         Looper.prepare();
                         Toast.makeText(MainActivity.this,"录入成功",Toast.LENGTH_SHORT).show();
 
-                        Intent intent1=new Intent(MainActivity.this, Main2_1Activity.class);
+                        Intent intent1=new Intent(MainActivity.this, InputFaceSuccess.class);
                         startActivity(intent1);
                         Looper.loop();
                         break;
@@ -269,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
                         Looper.prepare();
                         Toast.makeText(MainActivity.this,"录入失败，请重新录入",Toast.LENGTH_SHORT).show();
 
-                        Intent intent2=new Intent(MainActivity.this, Main2Activity.class);
+                        Intent intent2=new Intent(MainActivity.this, InputFace.class);
                         startActivity(intent2);
                         Looper.loop();
                         break;

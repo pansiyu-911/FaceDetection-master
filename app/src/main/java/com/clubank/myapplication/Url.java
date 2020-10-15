@@ -26,7 +26,7 @@ public class Url extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent intent=new Intent(Url.this,Main1Activity.class);
+                Intent intent=new Intent(Url.this, Login.class);
                 ip= editText.getText().toString();
                 startActivity(intent);
             }

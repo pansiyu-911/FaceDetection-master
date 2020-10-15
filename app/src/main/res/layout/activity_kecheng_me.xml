@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".myapplication.Main3Activity"
+    tools:context=".myapplication.kecheng_me"
     android:background="#fff">
 
     <FrameLayout

@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashActivity.this, Main1Activity.class);
+                Intent intent=new Intent(SplashActivity.this, Login.class);
                 startActivity(intent);
                 SplashActivity.this.finish();//关闭splashActivity，将其回收，否则按返回键会返回此界面
             }
