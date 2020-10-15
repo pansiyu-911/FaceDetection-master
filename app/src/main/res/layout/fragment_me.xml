@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/action_bar"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginTop="18dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/me_1"
+                android:layout_width="148dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@mipmap/i3_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/me_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="学号：" />
+
+                    <TextView
+                        android:id="@+id/me_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/me_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="姓名：" />
+
+                    <TextView
+                        android:id="@+id/me_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="TextView" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/me_button_1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基本资料"
+            android:gravity="left"
+            android:drawableRight="@mipmap/i3_3"/>
+
+        <Button
+            android:id="@+id/me_button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="密码管理"
+            android:drawableRight="@mipmap/i3_3"/>
+
+        <Button
+            android:id="@+id/me_button_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="修改头像"
+            android:drawableRight="@mipmap/i3_3"/>
+
+        <Button
+            android:id="@+id/me_button_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="退出登录"
+            android:drawableRight="@mipmap/i3_3"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myapplication.Stu_Name"
+
+    android:orientation="vertical"
+
+    android:background="#f0f8fa">
+
+    <include layout="@layout/action_stu_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="姓名："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_1"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="潘思玉"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="性别："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_2"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="女"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="学号："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_3"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1813610130"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="院系："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_4"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="信息工程学院"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="专业："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_5"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="物联网应用技术"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="班级："
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_name_6"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="18物联网应用技术"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

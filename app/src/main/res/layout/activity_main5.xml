@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".myapplication.Main5Activity"
+    android:background="#fff">
+
+    <include layout="@layout/action_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+
+        android:background="#fff"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="变更原因：" />
+
+        <EditText
+            android:id="@+id/ET5_1"
+            android:layout_width="278dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:selectAllOnFocus="true"
+            android:scrollbars="vertical"
+            android:background="@drawable/edit_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="佐证材料：" />
+
+        <ImageView
+            android:id="@+id/imageButton5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:src="@mipmap/i_5" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5_1"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#3C8DC4"
+        android:text="提交"
+        android:onClick="submission"
+        android:textColor="#FFFFFF"
+        tools:ignore="OnClick" />
+
+
+</LinearLayout>

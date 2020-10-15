@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/kaoqin1"
+        android:icon="@mipmap/i4"
+        android:title="考勤统计"
+        />
+
+    <item
+        android:id="@+id/kaoqin2"
+        android:icon="@mipmap/i4_1"
+        android:title="考勤详情" />
+
+</menu>
